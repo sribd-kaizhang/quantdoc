@@ -1,0 +1,68 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: 政企大数据实验室
+  product: 量化资管平台
+  version: 1.0
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+  - title: 数据管理
+    output: web, pdf
+    folderitems:
+    
+    - title: 数据存储与更新
+      url: /mydoc_data_management.html
+      output: web, pdf
+
+  - title: 数据接口
+    output: web, pdf
+    folderitems:
+      
+    - title: 股票数据
+      url: /mydoc_get_stocks_data.html
+      output: web, pdf
+    
+    - title: 指数数据
+      url: /mydoc_get_index_data.html
+      output: web, pdf
+
+  - title: 因子库
+    output: web, pdf
+    folderitems:
+
+    - title: 因子函数
+      url: /mydoc_factor_function.html
+      output: web, pdf
+    
+    - title: 因子描述
+      url: /mydoc_factor_description.html
+      output: web, pdf
+  
+  - title: 单因子测试
+    output: web, pdf
+    folderitems:
+
+    - title: 因子预处理
+      url: /mydoc_factor_analysis_prepare.html
+      output: web, pdf
+
+    - title: 单因子测试
+      url: /mydoc_factor_analysis.html
+      output: web, pdf
+
+    
+
+# Copyright 2021 Google LLC

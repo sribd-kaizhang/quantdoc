@@ -1,0 +1,22 @@
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: GitHub
+      external_url: https://github.com/zqbiglab/zqquant
+    - title: 更新记录
+      url: /news
+
+#Topnav dropdowns
+topnav_dropdowns:
+- title: Other Material
+  folders:
+    - title: 其他材料
+      folderitems:
+          - title: 组会报告
+            url: /mydoc_meeting.html
+          - title: 文献资料
+            url: /mydoc_references.html
+
+# Copyright 2021 Google LLC
