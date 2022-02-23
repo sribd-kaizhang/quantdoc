@@ -232,98 +232,96 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
    营业收入除以流通市值，其中营业收入等于滚动12个月的营业收入，流通市值等于个股的流通股数与最新收盘价的乘积。
 
    参考文献：Jr, Barbee William C., and MukherjiSandip, and A. Rainesgary, 1996, Do Sales–Price and  Debt–Equity Explain Stock Returns Better than Book–Market and Firm Size? Financial Analysis Journal 52, 56-60.
-   
-9. 企业价值倍数（EV/EBITDA，ev_ebitda）
-
-   企业价值除以息税折旧摊销前利润，其中企业价值与息税折旧摊销前利润均以最新披露的财务报表为口径。其中，
-
-   * 企业价值（EV）= 总市值 + 带息债务 - 货币资金
-
-   * 带息债务 = 负债合计 - 无息流动负债 - 无息非流动负债
-
-   * 无息流动负债 = 应付账款 + 预收账款 + 应付职工薪酬 + 应交税费 + 其他应付款 + 预提费用 + 递延收益 + 其他流动负债
-
-   * 无息非流动负债：非流动负债合计 - 长期借款 - 应付债券
 
 ### 成长因子
 
-1. 总资产增长率（asset growth, agr）
+1. 总资产增长率（asset growth, asset_g）
 
    最新财务报表披露的总资产减去上一年同比总资产再除以上一年同比总资产。
 
    参考文献：Cooper, Michael J., and Huseyin Gulen, and Michael J. Schill, 2008, Asset Growth and the  Cross-Section of Stock Returns, Journal of Finance 63, 1609-1651.
 
-2. 负债增长率（liabilities growth，lgr）
+2. 负债增长率（liabilities growth，liab_g）
 
    最新财务报表披露的总负债减去上一年同比总负债再除以上一年同比总负债。
 
    参考文献：Soliman, M. T., 2005, Accrual reliability, earnings persistence and stock prices ☆, Journal of  Accounting & Economics 39, 437-485.
 
-3. 净资产增长率（book market value growth，bmgr）
+3. 净资产增长率（book market value growth，bm_g）
 
    最新财务报表披露的股东权益合计(不含少数股东权益)减去上一年同比股东权益合计（不含少数股东权益）再除以上一年同比股东权益合计（不含少数股东权益）。
 
    参考文献：Soliman, M. T., 2005, Accrual reliability, earnings persistence and stock prices ☆, Journal of  Accounting & Economics 39, 437-485.
 
-4. 营业收入（TTM）增长率（trailing 12 months sales growth，pchsale_ttm）
+4. 营业收入（TTM）增长率（trailing 12 months sales growh，sales_g_ttm）
 
    最近12个月营业收入减去上一年同比营业收入再除以上一年同比营业收入。
 
    参考文献：Lakonishok, Josef, and Andrei Shleifer, and Robert W. Vishny, 1994, Contrarian Investment,  Extrapolation, and Risk, Journal of Finance 49, 1541-1578.
 
-5. 营业收入（季度）增长率（quarterly sales growth, pchsale_q）
+5. 营业收入（季度）增长率（quarterly sales growth, sales_g_q）
 
    最新财务报表披露的营业收入减去上一年同比营业收入再除以上一年同比营业收入。
 
    参考文献：同上。
 
-8. 净利润（TTM）增长率（trailing 12 months profit growth, pchprofit_ttm）
+6. 营业利润（TTM）增长率（trailing 12 months gross margin growth，gm_g_ttm）
+
+   营业利润（TTM）增长率减去营业收入（TTM）增长率，其中营业利润（TTM）增长率等于最近12个月营业利润减去上一年同比营业利润再除以上一年同比营业利润，最近12个月营业收入减去上一年同比营业收入再除以上一年同比营业收入。
+
+   参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
+
+7. 营业利润（季度）增长率（quarterly gross margin growth, gm_g_q）
+
+   营业利润（季度）增长率减去营业收入（季度）增长率，其中营业利润（季度）增长率等于最新披露财务报表的营业利润减去上一年同比营业利润再除以上一年同比营业利润，营业收入（季度）增长率等于最新财务报表披露的营业收入减去上一年同比营业收入再除以上一年营业收入。
+
+   参考文献：同上。
+
+8. 净利润（TTM）增长率（trailing 12 months profit growth, profit_g_ttm）
 
    最近12个月净利润（不含少数股东损益）减去上一年同比净利润（不含少数股东损益）再除以上一年同比净利润（不含少数股东损益）。
 
-9. 净利润（季度）增长率（quarterly profit growth, pchprofit_q）
+9. 净利润（季度）增长率（quarterly profit growth, profit_g_q）
 
    最新财务报表披露的净利润（不含少数股东损益）减去上一年同比净利润（不含少数股东损益）再除以上一年同比净利润（不含少数股东损益）。
 
-8. 存货增长率（inventory growth，pchinv）
+10. 存货增长率（inventory growth，inv_g）
 
-   最新财务报表披露的净存货额减去上一年同比净存货额再除以上一年同比净存货额。
+    最新财务报表披露的净存货额减去上一年同比净存货额再除以上一年同比净存货额。
 
-   参考文献：Thomas, Jacob K., and Huai Zhang, 2002, Inventory Changes and Future Returns, Review of  Accounting Studies 7, 163-187.
+    参考文献：Thomas, Jacob K., and Huai Zhang, 2002, Inventory Changes and Future Returns, Review of  Accounting Studies 7, 163-187.
 
-9. 税收（TTM）增长率（trailing 12 months tax growth, pchtax_ttm）
+11. 营业收入与存货增长率的差（sales growth minus inventory growth, sales_g_minus_inv_g）
 
-   最近12个月所得税减去上一年同比所得税再除以上一年同比所得税。
+    营业收入（季度）增长率减去存货增长率，其中营业收入（季度）增长率等于最近12个月净利润（不含少数股东损益）减去上一年同比营业收入（不含少数股东损益）再除以上一年同比营业收入（不含少数股东损益），存货增长率等于最新财务报表披露的净存货额减去上一年同比净存货额再除以上一年同比净存货额。 
 
-   参考文献：Thomas, Jacob K., and Huai Zhang, 2002, Inventory Changes and Future Returns, Review of Accounting Studies 7, 163-187. 
+    参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
-10. 税收（季度）增长率（quarterly tax growth, pchtax_g）
+12. 税收（TTM）增长率（trailing 12 months tax growth, income_tax_g_ttm）
+
+    最近12个月所得税减去上一年同比所得税再除以上一年同比所得税。
+
+    参考文献：Thomas, Jacob K., and Huai Zhang, 2002, Inventory Changes and Future Returns, Review of Accounting Studies 7, 163-187. 
+
+13. 税收（季度）增长率（quarterly tax growth, income_tax_g）
 
     最新财务报表披露的所得税减去上一年同比所得税再除以上一年同比所得税。
 
     参考文献：同上。
 
-11. 增值因子（accruals component, acc）
+14. 增值因子（accruals component, acc）
 
-    增值除以平均资产合计，统计口径为过去12个月，其中
-
-    增值 (Accruals) = ($\Delta$流动资产 - $\Delta$现金及现金等价物) - ($\Delta$流动负债-$\Delta$流动负债中债务-$\Delta$应交税费) - 折旧与摊销
-
-    流动负债中债务 = 一年内到期的非流动负债 + 应付票据
-
-    折旧与摊销 = 固定资产折旧、油气资产折旧、 生产性生物资产折旧 + 无形资产摊销 + 长期待摊费用摊销
-
-    平均资产合计 = 0.5 $\times$ (最新财务报表披露的总资产 + 上一年同比总资产)
+    增值除以平均资产合计，其中增值等于除去现金及现金等价物变化的流动资产变化减去除去债务变化和应税收入变化的流动负债再减去折旧和摊销，平均资产合计等于最新财报披露总资产与其上一年同比总资产的平均值。债务等于最新财报披露的一年内到期的非流动资产与应付票据的和，现金及现金等价物变化等于过去12个月的现金流及现金等价物净增加额，折旧和摊销等于过去12个月的固定资产折旧、油气资产折旧、生产性生物资产折旧与无形资产摊销的和。
 
     参考文献：Sloan, Richard G., 1996, Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings? The Accounting Review 71, 289-315. 
 
-15. 增值因子的绝对值（absolute accruals, absacc）
+15. 增值因子的绝对值（absolute accruals, acc_abs）
 
     增值因子的绝对值，其中增值因子的计算方式同上。
 
     参考文献：Bandyopadhyay, Sati P., and Alan Guoming Huang, and Tony Wirjanto, 2010, The Accrual Volatility Anomaly, Working Paper. 
 
-16. 股东权益变化率（% change in shareholders' equity, egr）
+16. 股东权益变化率（% change in shareholders' equity, eq_g）
 
     最近财务报表披露的股东权益合计（不包括少数股东权益）减去上一年同比股东权益合计（不包括少数股东权益）再除以上一年同比股东权益合计（不包括少数股东权益）
 
@@ -335,27 +333,21 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
     参考文献：Hirshleifer, David, Kewei Hou, Siew Hong Teoh, and Yinglei Zhang, 2004, Do investors overvalue firms with bloated balance sheets? , Journal of Accounting & Economics 38, 297-331. 
     
-18. 营业收入变化率减去存货净额变化率（% change in sales - % change in inventory, pchsale_pchinv）
+18. 营业收入变化率减去存货净额变化率（% change in sales - % change in inventory, sales_g_minus_inv_g）
 
     营业收入（TTM）变化率减去存货净额变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，存货净额变化率等于最新财务报表披露的存货净额减去上一年同比的存货净额除以上一年同比的存货净额。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
-19. 营业收入变化率减去应收账款变化率（% change in sales - % change in accounts receivable, pchsales_pchar）
+19. 营业收入变化率减去应收账款变化率（% change in sales - % change in accounts receivable, sales_g_minus_ar_g）
 
     营业收入（TTM）变化率减去应收账款变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，应收账款变化率等于最新财务报表披露的应收账款减去上一年同比的应收账款除以上一年同比的应收账款。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
-17. 营业收入变化率减三费变化率（% change in sales - % change in SG&A, pchsales_pchsga）
+20. 营业收入变化率减去三费变化率（% change in sales - % change in SG&A, sales_g_minus_sga_g）
 
-    营业收入（TTM）变化率减销售、管理、财务费用总和的变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，三费变化率等于最近12个月销售、管理、财务费用总和减去上一年同比三费费用除以上一年同比三费费用。
-
-    参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
-
-18. 毛利率变化率减营业收入变化率（% change in gross margin - % change in sales, pchgm_pchsale）
-
-    毛利率（TTM）变化率减营业收入（TTM）变化率，其中毛利率（TTM）变化率等于最近12个月的毛利率减上一年同比毛利率再除以上一年同比毛利率，毛利率等营业收入减营业成本再除营业成本，营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入。
+    营业收入（TTM）变化率减去销售、管理、财务费用总和的变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，三费变化率等于最近12个月销售、管理、财务费用总和减去上一年同比三费费用除以上一年同比三费费用。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
@@ -365,7 +357,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
     参考文献：Guo, Re Jin, and Baruch Lev, and Charles Shi, 2006, Explaining the Short- and Long-Term  IPO Anomalies by R&D, Journal of Business Finance & Accounting 33, 580–586.
 
-22. 研发支出市值比（R&D to market capitalization, rd_mc）
+22. 研发支出市值比（R&D to market capitalization, rd_to_mc）
 
     最近12个月的研发支出除以最新流通市值。
 
@@ -443,55 +435,55 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 ### 财务流动性因子
 
-1. 流动比率（current ratio, cur）
+1. 流动比率（current ratio, cr）
 
    最新财务报表披露的流动资产除以流动负债。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-2. 速动比率（quick ratio, quick）
+2. 速动比率（quick ratio, qr）
 
    流动资产减去净存货额再除以流动负债。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-3. 现金流负债比率（cash flow to debt ratio, cf_debt）
+3. 现金流负债比率（cash flow to debt ratio, cf_to_debt）
 
    最新财务报表披露的季度经营现金净流量除以流动负债。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-4. 营业收入现金比（sales to cash ratio, sale_cash）
+4. 营业收入现金比（sales to cash ratio, sales_to_cash）
 
    最新财务报表披露的季度营业收入除以货币资金。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-5. 营业收入存货比（sales to inventory ratio, sale_inv）
+5. 营业收入存货比（sales to inventory ratio, sales_to_inv）
 
    最新财务报表披露的季度营业收入除以存货净额。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-6. 流动比率增长率（% current in ratio growth，pchcur）
+6. 流动比率增长率（current ratio growth，cr_g）
 
    最新财务报表披露的流动比率（流动资产除以流动负债）减去上一年同比流动比率再除以上一年同比流动比率。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-7. 速动比率增长率（% change in quick ratio, pchquick）
+7. 速动比率增长率（quick ratio growh, qr_g）
 
    最新财务报表披露的速动比率（流动资产减去净存货额的差除以流动负债）减去上一年同比速动比率再除以上一年同比速动比率。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-8. 营业收入存货比增长率（% change sales-to-inventory, pchsale_inv）
+8. 营业收入存货比增长率（% change sales-to-inventory, sales_to_inv_g）
 
    最新财务报表披露的营业收入存货比（季度营业收入除以存货净额）减去上一年同比营业收入存货比再除以上一年同比营业搜狐如存货比。
 
    参考文献： Ou, Jane A., and Stephen H. Penman, 1989, Financial statement analysis and the prediction of  stock returns, Journal of Accounting & Economics 11, 295-329.
 
-9. 营业收入应收账款比（sales to receivable, sale_rev）
+9. 营业收入应收账款比（sales to receivable, sales_to_receiv）
 
    最新财务报表披露的季度营业收入除以应收账款。
 
@@ -499,6 +491,8 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 10. 偿债能力/总资产（firm tangibility, tang）
 
-    最新财务报表披露的可抵押资产除以总资产，其中可抵押资产=(货币资金+0.715$\times$应收账款+0.547$\times$存货+0.535$\times$固定资产)。
+    最新财务报表披露的货币资金加0.715倍应收账款、0.547倍存货净值与0.535倍固定资产的和，再除以总资产合计。
 
     参考文献： Almeida, Heitor, and Murillo Campello, 2007, Financial Constraints, Asset Tangibility, and  Corporate Investment, Review of Financial Studies, 20, 1429-1460.
+
+    \times

@@ -24,10 +24,10 @@ from factors_library import get_factors as gf
 
 __输入参数__：  
 
-|名称 |类型 |必选 |描述 |  
+|名称 |类型 |必选 |描述 |
 | --- | --- | --- | --- |
-|`from_date`|str|N|起始日期，日期格式为`'yyyy-MM-dd'`|  
-|`to_date`|str|N|终止日期，日期格式为`'yyyy-MM-dd'`| 
+|`from_date`|str|N|起始日期，日期格式为`'yyyy-MM-dd'`|
+|`to_date`|str|N|终止日期，日期格式为`'yyyy-MM-dd'`|
 |`trade_date`|str|N|交易日期，日期格式为`'yyyy-MM-dd'`|
 
 __输出参数__:
@@ -41,7 +41,7 @@ __输出参数__:
 |`circ_mc`|float|流动市值|
 |`circ_mc_log`|float|流动市值对数|
 |`mc_nonlinear`|float|非线性市值|
-|`circ_to_total_mc_ratio`|float|流通市值占总市值比重|
+|`circ_to_total_mc_ratio`|float|流通市值占总市值比重&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 
 
 
@@ -71,7 +71,7 @@ __输出参数__:
 |`skew`|float|偏态|
 |`ido_skew`|float|异质偏态|
 |`con_skew`|float|条件偏态|
-|`ret_max`|float|1个月最大日收益率|
+|`ret_max`|float&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|1个月最大日收益率&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 
 ## 流动性因子
 
@@ -98,7 +98,7 @@ __输出参数__:
 |`turn_std_1y`|float|12个月日换手率波动率|
 |`turn_abn`|float|异常换手率|
 |`illiq_1m`|float|1个月非流动性|
-|`illiq_1y`|float|12个月非流动性|
+|`illiq_1y`|float&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|12个月非流动性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 
 ## Beta因子
 
@@ -123,7 +123,7 @@ __输出参数__:
 |`beta_up`|float|上行风险|
 |`beta_down`|float|下行风险|
 |`beta_relative`|float|上行风险/下行风险|
-|`dimson`|float|Dimson Beta系数|
+|`dimson`|float&nbsp; &nbsp; &nbsp; &nbsp;|Dimson Beta系数&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 
 ## 动量反转因子
 
@@ -148,7 +148,7 @@ __输出参数__:
 |`mom_6m`|float|6个月动量|
 |`mom_12m`|float|12个月动量|
 |`ido_mom`|float|异质动量|
-|`mom_chg`|float|动量变化|
+|`mom_chg`|float &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|动量变化&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 
 ## 价值因子
 
@@ -176,7 +176,8 @@ __输出参数__:
 |`cfp`|float|现金流价格比|
 |`ocfp`|float|营业现金流价格比|
 |`dp`|float|股利价格比|
-|`sp`|float|营业收入价格比|
+|`sp`|float &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|营业收入价格比&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
+|`ev_ebitda`|float|企业价值倍数|
 
 
 ## 成长因子
@@ -198,28 +199,27 @@ __输出参数__:
 | --- |--- |--- |
 |`trade_date`|str|交易日期|
 |`stock_code`|str|股票代码|
-|`asset_g`|float|总资产增长率|
-|`liab_g`|float|总负债增长率|
-|`bm_g`|float|净资产增长率|
-|`sales_g_ttm`|float|营业收入增长率（TTM）|
-|`sales_g_q`|float|营业收入增长率（季度）|
-|`gm_g_ttm`|float|营业利润增长率（TTM）|
-|`gm_g_q`|float|营业利润增长率（季度）|
-|`profit_g_ttm`|float|净利润增长率（TTM）|
-|`profit_g_q`|float|净利润增长率（季度）|
-|`inv_g`|float|存货增长率|
-|`income_tax_g_ttm`|float|所得税增长率（TTM）|
-|`income_tax_g_q`|float|所得税增长率（季度）|
+|`agr`|float|总资产增长率|
+|`lgr`|float|总负债增长率|
+|`bmgr`|float|净资产增长率|
+|`pchsale_ttm`|float|营业收入增长率（TTM）|
+|`pchsale_q`|float|营业收入增长率（季度）|
+|`pchprofit_ttm`|float|营业利润增长率（TTM）|
+|`pchprofit_q`|float|营业利润增长率（季度）|
+|`pchinv`|float|存货增长率|
+|`pchtax_ttm`|float|所得税增长率（TTM）|
+|`pchtax_q`|float|所得税增长率（季度）|
 |`acc`|float|增值因子|
-|`acc_abs`|float|增值因子绝对值|
-|`eq_g`|float|所有股东权益（不包含少数股东）变化率|
+|`absacc`|float|增值因子绝对值|
+|`egr`|float|所有股东权益（不包含少数股东权益）增长率|
 |`noa`|float|净经营资产|
-|`sales_g_minus_inv_g`|float|营业收入变化减存货净额变化|
-|`sales_g_minus_ar_g`|float|营业收入变化减应收账款变化|
-|`sales_g_minus_sga_g`|float|营业收入变化三费支出变化|
+|`pchsale_pchinv`|float|营业收入变化率减存货净额变化率|
+|`pchsale_pchar`|float|营业收入变化率减应收账款变化率|
+|`pchsale_pchsga`|float|营业收入变化率减三费支出变化率|
+|`pchgm_pchsale`|float|毛利率变化率减营业收入变化率|
 |`rd`|float|研发支出|
-|`rd_to_mc`|float|研发支出市值比|
-|`rd_to_sales`|float|研发支出收入比|
+|`rd_mc`|float|研发支出市值比|
+|`rd_sale`|float &nbsp; &nbsp;|研发支出营业收入比 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|
 
 
 ## 盈利因子
@@ -250,9 +250,9 @@ __输出参数__:
 |`ct`|float|资本换手率|
 |`pa`|float|利润资产比率|
 |`op`|float|营业利润率|
-|`gm_chg_minu_sales_chg`|float|毛利率变化减营业收入变化|
+|`cashpr`|float|现金生产力|
 |`roic_q`|float|投入资本回报率（季度）|
-|`roic_ttm`|float|投入资本回报率（TTM）|
+|`roic_ttm`|float &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|投入资本回报率（TTM） &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;|
 
 ## 财务流动性因子
 
@@ -273,12 +273,13 @@ __输出参数__:
 | --- |--- |--- |
 |`trade_date`|str|交易日期|
 |`stock_code`|str|股票代码|
-|`curr`|float|流动比率|
+|`cur`|float|流动比率|
 |`quick`|float|速动比率|
-|`cf_to_debt`|float|现金流负债比率|
-|`sales_to_cash`|float|营业收入现金比|
-|`curr_g`|float|流动比率增长率|
-|`quick_g`|float|速动比率增长率|
-|`sales_to_inv_g`|float|营业收入存货比增长率|
-|`sales_to_receiv`|float|营业收入应收账款比|
-|`tang`|float|偿债能力|
+|`cf_debt`|float|现金流负债比率|
+|`sale_cash`|float|营业收入现金比|
+|`sale_inv`|float|营业收入存货比|
+|`pchcur`|float|流动比率增长率|
+|`pchquick`|float|速动比率增长率|
+|`pchsale_inv`|float|营业收入存货比增长率|
+|`sale_rev`|float|营业收入应收账款比|
+|`tang`|float &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|偿债能力 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;|
