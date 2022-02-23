@@ -1,5 +1,5 @@
 ---
-title: "政企大数据实验室量化资管平台介绍"
+title: "量化资管平台介绍"
 keywords: homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
