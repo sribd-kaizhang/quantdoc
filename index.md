@@ -1,5 +1,5 @@
 ---
-title: "Getting started with our quantitative asset management toolkit"
+title: "政企大数据实验室量化资管平台介绍"
 keywords: homepage
 tags: [getting_started]
 sidebar: mydoc_sidebar
@@ -18,4 +18,4 @@ __该平台是深圳市大数据研究院政企大数据实验室量化资管团
 * `store_data`与`get_data` - 批量存储、更新与获取行情、财务报表与其他A股有关数据。
 * `get_factor` - 计算异象因子及对应公司特征。
 * `factor_analysis` - 单因子与多因子测试，包括（横截面与时间序列）回归法、投资组合排序与信息系数计算等。
-* ` backtest` - 基于向量化的策略回测框架，支持计算评价指标、绘制收益曲线与生成交易日志等。
+* `backtest` - 基于向量化的策略回测框架，支持计算评价指标、绘制收益曲线与生成交易日志等。
