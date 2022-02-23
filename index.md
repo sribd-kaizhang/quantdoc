@@ -9,7 +9,7 @@ summary: These brief instructions will help you get started quickly with the too
 
 {% include note.html content="平台仅供政企大数据实验室内部使用" %}
 
-__该平台是深圳市大数据研究院政企大数据实验室量化资管团队开发的基于Python语言的量化因子投资工具箱，包含数据管理、因子计算、单因子分析、策略回测等多个模块，目的是帮助量化多因子策略的开发与测试。__
+__该平台是深圳市大数据研究院政企大数据实验室量化资管团队开发的基于Python语言的量化因子投资工具箱，包含数据管理、因子计算、单因子分析、策略回测等多个模块，目的是帮助进行量化多因子策略的开发与测试。__
 
 
 
