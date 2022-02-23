@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/zqbiglab/zqquant
+      external_url: https://github.com/sribd-kaizhang/quantdoc
     - title: 更新记录
       url: /news
 
