@@ -115,7 +115,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 5. 异常换手率（abnormal turnover，turn_abn）
 
-   过去20个交易日的日换手率的平均值与过去252个交易日的日换手率的平均值的比值，其中标记过去20个交易日内不满10个交易日数据或过去252个交易日内不满120个交易日数据的股票数据为缺失值。
+   过去20个交易日的日换手率的平均值与过去250个交易日的日换手率的平均值的比值，其中标记过去20个交易日内不满10个交易日数据或过去250个交易日内不满120个交易日数据的股票数据为缺失值。
 
    参考文献：张峥,刘力.换手率与股票收益:流动性溢价还是投机性泡沫?[J].经济学(季刊),2006(02):871-892.
 
@@ -205,31 +205,31 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 4. 收益价格比（earnings-to-price ratio，ep）
 
-   净利润除以流通市值，其中净利润等于滚动12个月净利润（不含少数股东损益），流通市值等于个股的流通股数与最新收盘价的乘积。
+   净利润除以流通市值，其中净利润等于最近四个季度的净利润（不含少数股东损益），流通市值等于个股的流通股数与最新收盘价的乘积。
 
    参考文献：Basu, S., 1977, Investment Performance of Common Stocks In Relation To Their Price‐ Earnings Ratios: A Test Of The Efficient Market Hypothesis, Journal of Finance 32, 20.
 
 5. 现金流价格比（cash-flow-to-price ratio，cfp）
 
-   净现金流除以流通市值，其中净现金流等于滚动12个月的现金及现金等价物净增加额，流通市值等于个股的流通股数与最新收盘价的乘积。
+   净现金流除以流通市值，其中净现金流等于最近四个季度的的现金及现金等价物净增加额，流通市值等于个股的流通股数与最新收盘价的乘积。
 
    参考文献：Lakonishok, Josef, and Andrei Shleifer, and Robert W. Vishny, 1994, Contrarian Investment,  Extrapolation, and Risk, Journal of Finance 49, 1541-1578.
 
 6. 营业现金流价格比（operating cash-flow-to-price，ocfp）
 
-   营业现金流除以流通市值，其中营业现金流等于滚动12个月的经营活动产生的现金流量净额，流通市值等于个股的流通股数与最新收盘价的乘积。
+   营业现金流除以流通市值，其中营业现金流等于最近四个季度的的经营活动产生的现金流量净额，流通市值等于个股的流通股数与最新收盘价的乘积。
 
    参考文献：Desai, Hemang, and Shivaram Rajgopal, and Mohan Venkatachalam, 2004, Value-Glamour  and Accruals Mispricing: One Anomaly or Two? Accounting Review 79, 355-385.
 
 7. （待修改）股利价格比（dividend-to-price ratio，dp）
 
-   应付股利除以流通市值，其中应付股利等于滚动12个月的应付股利，流通市值等于个股的流通股数与最新收盘价的乘积。
+   应付股利除以流通市值，其中应付股利等于最近四个季度的应付股利，流通市值等于个股的流通股数与最新收盘价的乘积。
 
    参考文献：Litzenberger, Robert H., and Krishna Ramaswamy, 1982, The Effects of Dividends on  Common Stock Prices: Tax Effects or Information Effects? Discussion, Journal of Finance 37, 429- 443.
 
 8. 营业收入价格比（sales-to-price ratio，sp）
 
-   营业收入除以流通市值，其中营业收入等于滚动12个月的营业收入，流通市值等于个股的流通股数与最新收盘价的乘积。
+   营业收入除以流通市值，其中营业收入等于最近四个季度的营业收入，流通市值等于个股的流通股数与最新收盘价的乘积。
 
    参考文献：Jr, Barbee William C., and MukherjiSandip, and A. Rainesgary, 1996, Do Sales–Price and  Debt–Equity Explain Stock Returns Better than Book–Market and Firm Size? Financial Analysis Journal 52, 56-60.
    
@@ -267,7 +267,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 4. 营业收入（TTM）增长率（trailing 12 months sales growth，pchsale_ttm）
 
-   最近12个月营业收入减去上一年同比营业收入再除以上一年同比营业收入。
+   最近四个季度的营业收入减上一年同比营业收入再除以上一年同比营业收入。
 
    参考文献：Lakonishok, Josef, and Andrei Shleifer, and Robert W. Vishny, 1994, Contrarian Investment,  Extrapolation, and Risk, Journal of Finance 49, 1541-1578.
 
@@ -279,7 +279,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 8. 净利润（TTM）增长率（trailing 12 months profit growth, pchprofit_ttm）
 
-   最近12个月净利润（不含少数股东损益）减去上一年同比净利润（不含少数股东损益）再除以上一年同比净利润（不含少数股东损益）。
+   最近四个季度的净利润（不含少数股东损益）减去上一年同比净利润（不含少数股东损益）再除以上一年同比净利润（不含少数股东损益）。
 
 9. 净利润（季度）增长率（quarterly profit growth, pchprofit_q）
 
@@ -293,7 +293,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 9. 税收（TTM）增长率（trailing 12 months tax growth, pchtax_ttm）
 
-   最近12个月所得税减去上一年同比所得税再除以上一年同比所得税。
+   最近四个季度的所得税减去上一年同比所得税再除以上一年同比所得税。
 
    参考文献：Thomas, Jacob K., and Huai Zhang, 2002, Inventory Changes and Future Returns, Review of Accounting Studies 7, 163-187. 
 
@@ -305,7 +305,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 11. 增值因子（accruals component, acc）
 
-    增值除以平均资产合计，统计口径为过去12个月，其中
+    增值除以平均资产合计，统计口径为最近四个季度，其中
 
     增值 (Accruals) = ($\Delta$流动资产 - $\Delta$现金及现金等价物) - ($\Delta$流动负债-$\Delta$流动负债中债务-$\Delta$应交税费) - 折旧与摊销
 
@@ -331,43 +331,47 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 17. 净经营资产（net operating assets, noa）
 
-    净经营资产的计算方式为最新财报披露的经营资产减去经营负债再除以上一年同比的总资产，其中经营资产等于总资产减去货币资金与交易性金融资产，经营负债等于总负债减去短期借款、长期借款、少数股东权益与股东权益合计（不含少数股东权益）。
+    净经营资产的计算方式为最新财报披露的经营资产减经营负债再除以上一年同比的总资产，其中
 
+    经营资产 = 总资产 - 货币资金 - 交易性金融资产
+    
+    经营负债 = 总负债 - 短期借款 - 长期借款 - 归属母公司所有者权益 - 少数股东权益
+    
     参考文献：Hirshleifer, David, Kewei Hou, Siew Hong Teoh, and Yinglei Zhang, 2004, Do investors overvalue firms with bloated balance sheets? , Journal of Accounting & Economics 38, 297-331. 
     
 18. 营业收入变化率减去存货净额变化率（% change in sales - % change in inventory, pchsale_pchinv）
 
-    营业收入（TTM）变化率减去存货净额变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，存货净额变化率等于最新财务报表披露的存货净额减去上一年同比的存货净额除以上一年同比的存货净额。
+    营业收入（TTM）变化率减去存货净额变化率，其中营业收入（TTM）变化率等于最近四个季度的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，存货净额变化率等于最新财务报表披露的存货净额减去上一年同比的存货净额除以上一年同比的存货净额。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
 19. 营业收入变化率减去应收账款变化率（% change in sales - % change in accounts receivable, pchsales_pchar）
 
-    营业收入（TTM）变化率减去应收账款变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，应收账款变化率等于最新财务报表披露的应收账款减去上一年同比的应收账款除以上一年同比的应收账款。
+    营业收入（TTM）变化率减去应收账款变化率，其中营业收入（TTM）变化率等于最近四个季度的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，应收账款变化率等于最新财务报表披露的应收账款减去上一年同比的应收账款除以上一年同比的应收账款。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
 17. 营业收入变化率减三费变化率（% change in sales - % change in SG&A, pchsales_pchsga）
 
-    营业收入（TTM）变化率减销售、管理、财务费用总和的变化率，其中营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，三费变化率等于最近12个月销售、管理、财务费用总和减去上一年同比三费费用除以上一年同比三费费用。
+    营业收入（TTM）变化率减销售、管理、财务费用总和的变化率，其中营业收入（TTM）变化率等于最近四个季度的营业收入减去上一年同比的营业收入除以上一年同比的营业收入，三费变化率等于最近四个季度的销售、管理、财务费用总和减去上一年同比三费费用除以上一年同比三费费用。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
 18. 毛利率变化率减营业收入变化率（% change in gross margin - % change in sales, pchgm_pchsale）
 
-    毛利率（TTM）变化率减营业收入（TTM）变化率，其中毛利率（TTM）变化率等于最近12个月的毛利率减上一年同比毛利率再除以上一年同比毛利率，毛利率等营业收入减营业成本再除营业成本，营业收入（TTM）变化率等于最近12个月的营业收入减去上一年同比的营业收入除以上一年同比的营业收入。
+    毛利率（TTM）变化率减营业收入（TTM）变化率，其中毛利率（TTM）变化率等于最近四个季度的毛利率减上一年同比毛利率再除以上一年同比毛利率，毛利率等营业收入减营业成本再除营业成本，营业收入（TTM）变化率等于最近四个季度的营业收入减去上一年同比的营业收入除以上一年同比的营业收入。
 
     参考文献：Bushee, B., and J. S. Abarbanell, 1997, Abnormal Returns to a Fundamental Analysis Strategy,  The Accouting Review 73, 19-45.
 
 21. 研发支出（research and development，rd）
 
-    最近12个月的研发支出。
+    最近四个季度的研发支出。
 
     参考文献：Guo, Re Jin, and Baruch Lev, and Charles Shi, 2006, Explaining the Short- and Long-Term  IPO Anomalies by R&D, Journal of Business Finance & Accounting 33, 580–586.
 
 22. 研发支出市值比（R&D to market capitalization, rd_mc）
 
-    最近12个月的研发支出除以最新流通市值。
+    最近四个季度的研发支出除以最新流通市值。
 
     参考文献：Guo, Re Jin, and Baruch Lev, and Charles Shi, 2006, Explaining the Short- and Long-Term  IPO Anomalies by R&D, Journal of Business Finance & Accounting 33, 580–586.
 
@@ -381,7 +385,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 2. 净资产收益（TTM）率（trailing twelve month return on equity, roe_ttm）
 
-   最近12月的净利润(不含少数股东损益)除以最新财务报表披露的股东权益合计(不含少数股东权益)。
+   最近四个季度的净利润(不含少数股东损益)除以最新财务报表披露的股东权益合计(不含少数股东权益)。
 
    参考文献：Hou, Kewei, and Chen Xue, and Lu Zhang, 2015, Digesting anomalies: An investment  approach, Review of Financial Studies 28, 650–705. 
 
@@ -393,7 +397,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 4. 总资产收益（TTM）率（trailing twelve month return on assets, roa_q）
 
-   最近12月的净利润(不含少数股东损益)除以最新财务报表披露的总资产。
+   最近四个季度的净利润(不含少数股东损益)除以最新财务报表披露的总资产。
 
    参考文献：Balakrishnan, Karthik, and Eli Bartov, and Lucile Faurel, 2010, Post loss/profit announcement  drift, Journal of Accounting and Economics 50, 20-41.
 
@@ -403,17 +407,17 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 6. 销售毛利（TTM）率（trailing twelve month gross profit magin, gp_ttm）
 
-   最近12个月的营业收入减去营业成本再除以营业成本。
+   最近四个季度的营业收入减去营业成本再除以营业成本。
 
 7. 资本换手率（capital turnover, ct）
 
-   最近12月的销售收入除以平均总资产，其中平均总资产等于最新财务报表披露的总资产与上一年同比总资产的平均值。
+   最近四个季度的销售收入除以平均总资产，其中平均总资产等于最新财务报表披露的总资产与上一年同比总资产的平均值。
 
    参考文献：Baker, N. L., 2004, Commonality in the Determinants of Expected Stock Returns, Journal of  Financial Economics 41, 401-439.
 
 8. 利润资产比率（gross profit-to-assets, pa）
 
-   最近12月的营业利润除以平均总资产，其中营业利润等于营业收入减去营业成本，平均总资产等于最新财务报表披露的总资产与上一年同比总资产的平均值。
+   最近四个季度的营业利润除以平均总资产，其中营业利润等于营业收入减去营业成本，平均总资产等于最新财务报表披露的总资产与上一年同比总资产的平均值。
 
    参考文献：Novy-Marx, Robert, 2013, The other side of value: The gross profitability premium ,  Journal of Financial Economics 108, 1-28.
    
@@ -437,7 +441,7 @@ __因子库`factor_library`提供包括交易摩擦因子（市值因子、波�
 
 12. 投入（TTM）资本回报率（trailing twelve month return on invested capital, roic_ttm）
 
-    最近12月的息前税后营业利润除以最新财务报表披露的投入资本，其中息前税后营业利润等于净利润加财务费用，投入资本等于资产总计减流动负债加上应付票据、短期借款与一年内到期的非流动负债。
+    最近四个季度的息前税后营业利润除以最新财务报表披露的投入资本，其中息前税后营业利润等于净利润加财务费用，投入资本等于资产总计减流动负债加上应付票据、短期借款与一年内到期的非流动负债。
 
     参考文献： Brown, David P., and Bradford Rowe, 2007, The Productivity Premium in Equity Returns,  Working Paper.
 
