@@ -132,7 +132,7 @@ fa.factor_analysis(
 
 * 补充信息，包括股票行业、流通市值以及根据因子值分位数排序并分组后的结果；
 
-经过预处理后的数据将保存在名称为`factor_return_data`且格式为MultiIndex DataFrame的属性中，其二维索引分别为交易月份 _trade_month（level 0）_与股票代码 _stock_code（level 1）_，列包含交易日期 _trade_date_、因子值 _factor_、个股月收益率 _returns_、2012版证监会行业分类 _industry_、个股流通市值 _circ_mc_以及因子分位数组别 _quantiles_。当根据因子值排序构建分位数投资组合时，若考虑进行行业中性化或市值中性化处理，则将行业和（或）市值作为解释变量，以因子值作为被解释变量做回归，所得残差即为中性化后的因子值。
+经过预处理后的数据将保存在名称为`factor_return_data`且格式为MultiIndex DataFrame的属性中，其二维索引分别为交易月份 _trade_month（level 0）_与股票代码 _stock_code（level 1）_，列包含交易日期 _trade_date_、因子值 _factor_、个股月收益率 _returns_、2012版证监会行业分类 _industry_、个股流通市值 _circ_mc_ 以及因子分位数组别      _quantiles_。当根据因子值排序构建分位数投资组合时，若考虑进行行业中性化或市值中性化处理，则将行业和（或）市值作为解释变量，以因子值作为被解释变量做回归，所得残差即为中性化后的因子值。
 
 **数据样例：**
 
