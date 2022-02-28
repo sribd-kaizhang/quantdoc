@@ -94,7 +94,7 @@ fa.factor_analysis(
 
 **输出参数：**
 
-1. *属性列表：*
+*属性列表：*
 
 |名称|初始|类型|描述|
 |----|----|----|---|
@@ -102,7 +102,7 @@ fa.factor_analysis(
 |`returns_data`|Y|DataFrame|收益率数据，其中二维索引分别为交易月份 *trade_month（level 0）*与股票代码 *stock_code（level 1）*，并包含一个名称为 *returns*的列，其值为对应交易月份、股票代码的月收益率|
 |`factor_return_data`|Y|DataFrame|进行预处理后的因子与收益率合并数据，其中二维索引分别为交易月份 *trade_month（level 0）*与股票代码*stock_code（level 1）*，并包含名称分别为 *factor*、*returns*、*industry*、*quantiles*、*circ_mc_log* 的列，其值分别为对应交易月份、股票代码的因子值（处理后）、月收益率、所属行业、排序组别、流动市值对数|
 
-2. *方法列表：*
+*方法列表：*
 
 |名称|描述|
 |----|---|
