@@ -9,6 +9,38 @@ permalink: mydoc_get_stocks_data.html
 folder: mydoc
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+提取数据之前，需要导入`get_data`模块：
+
+```python
+from quantools.get_data import get_data as gd
+```
+
+
+
 ## 基础数据
 
 ### 交易日历

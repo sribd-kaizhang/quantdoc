@@ -5,17 +5,19 @@ last_updated: February 11, 2022
 keywords: factor description
 summary: "This page provides the functions to compute the anomaly factors."
 sidebar: mydoc_sidebar
-permalink: mydoc_factor_function.html
+permalink: mydoc_factor_cmpt_function.html
 folder: mydoc
 ---
 
-__因子库`factor_library`提供包括交易摩擦因子（市值因子、波动率因子、高阶距因子、流动性因子、Beta因子）、动量因子、价值因子、成长因子、盈利因子与财务流动性因子等六大类因子对应公司特征数据，本部分将针对每类因子的数据接口进行描述。__
+__因子库`factor_library`提供包括交易摩擦因子（市值因子、波动率因子、高阶距因子、流动性因子、Beta因子）、动量因子、价值因子、成长因子、盈利因子与财务流动性因子等六大类因子对应公司特征数据。其中，因子库包含`cmpt_factor`与`get_factor`两个模块，分别负责因子计算与因子提取。本部分将针对每类因子的计算函数接口进行描述。__
 
-调用因子库前，需要导入`factor_library`模块：
+调用因子库前，需要导入`cmpt_factor`模块：
 
 ```python
-from factors_library import get_factors as gf
+from quantools.factor_library import cmpt_factor as cf
 ```
+
+
 
 ## 市值因子
 

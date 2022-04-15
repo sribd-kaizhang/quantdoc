@@ -8,6 +8,12 @@ sidebar: mydoc_sidebar
 permalink: mydoc_get_factor_model.html
 folder: mydoc
 ---
+提取数据之前，需要导入`get_data`模块：
+
+```python
+from quantools.get_data import get_data as gd
+```
+
 
 
 ## 因子模型

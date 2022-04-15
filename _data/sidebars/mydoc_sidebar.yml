@@ -47,8 +47,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 因子函数
-      url: /mydoc_factor_function.html
+    - title: 因子计算函数
+      url: /mydoc_factor_cmpt_function.html
+      output: web, pdf
+      
+    - title: 因子提取函数
+      url: /mydoc_factor_get_function.html
       output: web, pdf
     
     - title: 因子描述

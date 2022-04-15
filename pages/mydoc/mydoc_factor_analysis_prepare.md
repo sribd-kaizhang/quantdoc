@@ -20,7 +20,7 @@ __`factor_analysis`是一款基于Python的单因子测试框架，为寻找能�
 首先，导入`factor_analysis`模块。
 
 ```python
-import factor_analysis as fa
+from quantools.factor_analysis import factor_analysis as fa
 ```
 在使用`factor_analysis`之前，需要准备好因子数据与收益率数据。其中因子数据需要处理成 _pandas.DataFrame_ 格式，且其二维索引必须为交易日期(_trade_date_)和股票代码(_stock_code_)；收益率数据同样需要处理成 _pandas.DataFrame_ 格式，其二维索引必须为交易月份(_trade_month_)和股票代码（_stock_code_）。
 
