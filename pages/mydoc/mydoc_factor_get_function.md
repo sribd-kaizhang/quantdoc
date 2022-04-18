@@ -19,7 +19,7 @@ from quantools.factor_library import get_factor as gf
 
 
 
-## 市值因子
+## 因子提取
 
 接口：`get_factor`  
 描述：根据指定日期，返回指定股票池的公司特征。当输入单个日期时（_trade_date_），函数返回输入日期前最后一个交易日盘后数据；当输入日期区间（_from_date_与_to_date_），函数返回输入日期区间内每月最后一个交易日盘后数据；

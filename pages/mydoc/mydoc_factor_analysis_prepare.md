@@ -49,7 +49,7 @@ trade_date stock_code
 使用样例:
 
 ```
-                       close
+                     returns
 trade_month ts_code          
 2010-01     000001    13.930
             000002    13.120
